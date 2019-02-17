@@ -7,12 +7,12 @@
     <title>{{ title }}</title>
   </head>
   <body >
+    {% if breaking.length %}
     <div class="banner">
-      {% if breaking.length %}
       {% set item = breaking | first %}
       <span class="announcement-title">{{ item.title }}</span> - {{ item.text | safe }}
-      {% endif %}
     </div>
+    {% endif %}
     <div class="container">
       <h1>{{ title }}</h1>
       {%- if subtitle %}<p class="subtitle">{{ subtitle }}</p>{% endif %}
