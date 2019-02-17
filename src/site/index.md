@@ -23,6 +23,10 @@ It was last deployed, most likely due to an update in a [data source](https://da
 {%- endfor -%}
 </ul>
 
+{% if breaking.length < 1 %}
+... it all looks quiet.
+{% endif%}
+
 
 ## Some Recent Twitter Love
 
