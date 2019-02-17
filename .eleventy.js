@@ -10,7 +10,6 @@ module.exports = function(config) {
   config.addLayoutAlias('default', 'layouts/base.njk');
 
   // Add some utiliuty filters
-  config.addFilter("squash", require("./src/filters/squash.js") );
   config.addFilter("dateDisplay", (dateObj, format = "LLL d, y") => {
     return DateTime.fromJSDate(dateObj, {
       zone: "utc"
@@ -19,7 +18,6 @@ module.exports = function(config) {
 
   // minify the html output
   config.addTransform("htmlmin", require("./src/utils/minify-html.js"));
-
 
   // pass some assets right through
   config.addPassthroughCopy("./src/site/images");

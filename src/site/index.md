@@ -15,7 +15,7 @@ https://data-feeds.netlify.com/
 It was last deployed, most likely due to an update in a [data source](https://data-feeds.netlify.com), at <time>`{{ site.buildTime | dateDisplay('HH:mm') }} on {{ site.buildTime | dateDisplay('DDD') }}`</time>
 
 
-## We can see the latest announcements
+## We can see all active announcements
 
 <ul>
 {% for item in breaking.slice(0,5) -%}

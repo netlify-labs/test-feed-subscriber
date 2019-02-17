@@ -36,6 +36,28 @@ body {
 }
 
 
+.banner {
+  text-align: left;
+  padding: 0.4em 2em;
+  background-color: $accent-color;
+  color: mix($text-color, $accent-color, 80%);
+
+  a:link,
+  a:visited {
+    color: $text-color;
+    text-decoration: none;
+    border-bottom: solid 1px mix($accent-color, $page-color, 50%);
+  }
+  a:hover,
+  a:focus {
+    color: $page-color;
+    border-bottom: solid 2px $page-color;
+  }
+
+}
+
+
+
 .container {
   margin-left: auto;
   margin-right: auto;
