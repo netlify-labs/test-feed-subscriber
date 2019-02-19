@@ -19,7 +19,7 @@ It was last deployed, most likely due to an update in a [data source](https://da
 
 <ul>
 {% for item in breaking.slice(0,5) -%}
-<li><b>{{ item.title }}</b> - {{ item.text | safe }}</li>
+<li><b>{{ item.title }}</b> - {{ item.content | safe }}</li>
 {%- endfor -%}
 </ul>
 
